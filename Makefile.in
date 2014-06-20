@@ -70,7 +70,7 @@ clean:
 	rm -f $(objects) vcprompt $(hgrepo) $(gitrepo) $(fossilrepo)
 
 DESTDIR =
-PREFIX = /usr/local
+PREFIX = @prefix@
 BINDIR = $(DESTDIR)$(PREFIX)/bin
 MANDIR = $(DESTDIR)$(PREFIX)/man/man1
 

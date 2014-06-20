@@ -24,7 +24,7 @@ if echo $CC | grep -q gcc; then
 fi
 
 # Checks for header files.
-AC_CHECK_HEADERS([arpa/inet.h stdlib.h string.h sys/time.h unistd.h])
+AC_CHECK_HEADERS([arpa/inet.h stdlib.h string.h sys/time.h unistd.h sys/wait.h])
 
 # Checks for third-party libraries.
 if test "$with_sqlite3" = "check" -o "$with_sqlite3" = "yes"; then
